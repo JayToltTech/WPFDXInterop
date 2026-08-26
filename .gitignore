@@ -219,3 +219,8 @@ FakesAssemblies/
 _Pvt_Extensions
 
 
+
+# prebuilt/ holds checked-in vendored binaries, not build output; the x64/
+# rule above would otherwise strip the x64 prebuilt.
+!prebuilt/x64/
+!prebuilt/x64/*.pdb
